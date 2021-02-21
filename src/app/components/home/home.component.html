@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href='./home.component.css' rel="stylesheet">   
+</head>
+<body>
+    <header>
+        <h1> Corvid Todo list</h1>
+    </header>
+    <div #wrapper class="wrapper" >
+
+      <!--Entering the todo value -->
+    <form [formGroup]="todoform" novalidate >
+        <input    type="text" class="form-control" formControlName="todolist" id="todo-value" placeholder="Add your new todo" required autofocus>
+        
+        
+        <button 
+         type="submit" class="btn btn-primary" (click)="submitForm($event)"> <i class="fas fa-plus-square"></i></button> 
+     
+        <button  (click)="todo($event)" class="btn-list">all</button> 
+    </form>
+    
+  
+      <ul #msg1 class="todoList">
+      
+      </ul>
+ 
+
+ 
+
+        <!--For listing all the values of todo on clicking the all button-->
+    
+        <ul #ulvalue *ngFor="let todo of todos" >
+          <li #msg >
+            <h4 #message > {{todo.todolist}} </h4>     
+          </li>
+          <button #b1 (click)="delete($event,message,msg,b2,b1)" class="btn-delete"><i class="fas fa-trash"></i></button> 
+          <button #b2 class="btn-edit" (click)="edit($event,message,msg,b1,b2,ulvalue)" ><i class="fas fa-edit"></i></button> 
+       
+        </ul>
+       
+   
+
+    </div>
+    
+    
+     
+  
+     
+     
+     
+ 
+ 
+    
+</body>
+</html>

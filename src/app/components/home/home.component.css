@@ -1,0 +1,274 @@
+
+body{
+  
+    color:black;
+    font-family:"Poppins", sans-serif;
+    min-height:100vh;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  
+}
+.wrapper .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+   
+  }
+.wrapper{
+   
+    background:rgb(219, 217, 217);
+    max-width: 600px;
+    width: 100%;
+    margin-left:  auto;
+    margin-right: auto;
+    
+    padding: 10px;
+    border-radius: 9px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    
+  }
+.wrapper header{
+    font-size:1.5rem;
+}
+
+header,form{
+    min-height:20vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+input.ng-dirty.ng-invalid {
+  color: red
+}
+h3{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8rem;
+}
+.wrapper li
+{
+   
+    background: #f2f2f2;
+    color:black;
+    font-size:1.0rem;
+    display: inline-block;
+    cursor:pointer;
+    align-items: center;
+    padding:1rem;
+    width: 20em;
+    height: 20px;
+  
+    margin-right:0em;
+  
+    transition:all 0.3s ease;
+  
+    margin:0 0 0 0px;
+   
+    border-radius: 10px;
+    margin-left: 30px;
+    
+    
+}
+
+.btn-delete
+{
+    background:rgb(141, 3, 3);
+    color:white;
+    border:none;
+    padding:1rem;
+    cursor:pointer;
+    font-size:1rem;
+    border-radius: 3px;
+    
+}
+.btn-edit
+{
+    
+    color:rgb(0, 68, 255);
+    border:none;
+    padding:1rem;
+    cursor:pointer;
+    font-size:1rem;
+    border-radius: 8px;
+    
+}
+.btn-complete
+{
+    background:rgb(73,204,73);
+    
+    color:white;
+    border:none;
+    padding:1rem;
+    cursor:pointer;
+    font-size:1rem;
+   
+}
+form input{
+    border: 2px solid red;
+    font-size:1.3rem;
+    width:350px;
+    border-radius: 10px;
+    background:white;
+    height:50px;
+    padding:1px;
+    margin-left:60px;
+    margin-right: 3px;
+    border: 2px solid rgba(1, 1, 73, 0.158);
+    
+}
+form button{
+    color:white;
+    background:#8E49E8;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    width: 55px;
+    margin:0 0 0 0px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+h1{
+    color:white;
+}
+.btn-list{
+    padding:0.5rem;
+    font-size:1.5rem;
+    color:#2A2A72;
+    background:white;
+    cursor:pointer;
+    border-radius: 10px;
+    
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+h4{
+    margin: 0 auto;
+    text-align:center;
+   
+
+}
+
+form button:hover{
+    color:#8E49E8;
+    background:white;
+}
+.btn-list:hover{
+    background:#2A2A72;
+    color:white;
+}
+.todo-container
+{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.todo-list
+{
+    min-width:30%;
+    list-style:none;
+    
+
+}
+.todo{
+    margin:0.5rem;
+    background: white;
+    color:black;
+    font-size:1.0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:all 0.5s ease;
+}
+.todo li{
+    flex:0.5;
+}
+.trash-btn, .complete-btn
+{
+    background:#2A2A72;
+    color:white;
+    border:none;
+    padding:1rem;
+
+    font-size:1rem;
+}
+.complete-btn
+{
+    background:rgb(73,204,73);
+}
+.todo-item
+{
+    padding: 0rem 0.5rem;
+}
+
+.completed
+{
+    text-decoration:line-through;
+    opacity:0.5;
+    
+}
+h3{
+    margin-left: 1em;
+}
+.fall
+{
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity:0;
+}
+
+
+
+select{
+    color:#ff6f47;
+    width:10rem;
+    cursor:pointer;
+    padding:1rem;
+}
+.select::after{
+    content:"\25BC";
+    position:absolute;
+    background: #ff6f47;
+    top:0;
+    right:0;
+    padding:1rem;
+    pointer-events:none;
+    transition:all 0.3s ease;
+}
+
+.select:hover::after{
+    background: white;
+    color:#ff6f47;
+}
+.has-info
+{
+    text-align: center;
+}
+.btn-primary
+{
+    padding:0.5rem;
+    font-size:2rem;
+    border:none;
+    background: white;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
